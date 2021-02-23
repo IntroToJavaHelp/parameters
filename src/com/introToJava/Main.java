@@ -8,6 +8,23 @@ public class Main
         final String someName = "Joe";
         final int someAmount = 3;
         sayHello(someName, someAmount);
+
+        // Now lets see some examples of incorrect calls to sayHello
+
+        // Example 1: Parameter types do not match
+        sayHello("Joe", 4.5);
+
+        // Example 2: Number of formal parameters does not
+        // match the number of actual parameters
+        sayHello("Bob", 3, "what is this doing here?", false);
+
+        // Example 3: a nullish value is passed
+        String foo;
+        if(false) {
+            // if this ever doesnt execute errors will occur
+            foo = "jenny";
+        }
+        sayHello(foo, 3);
     }
 
     /**
