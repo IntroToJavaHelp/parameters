@@ -29,7 +29,7 @@ public class Main
 
     /**
      *
-     * Greets a given name a give amount of times
+     * Greets a given name a given amount of times
      *
      * @param name Name of person to greet
      * @param times Amount of times to greet ${name}
